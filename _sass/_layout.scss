@@ -67,9 +67,7 @@
 
                     }
 
-                   .content{
-                          display:none;
-                        }
+                 
 
                         .active{
                           display:block;
@@ -135,6 +133,10 @@
 
 }//end of site_header tag//
 
+
+  ul.content{
+              display:none;
+            }
 
 .site-footer{
     clear: both;
