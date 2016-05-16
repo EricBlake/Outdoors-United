@@ -1,0 +1,112 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+//---------------------------VARIABLES-------------------------//
+//------FONTS--------------//
+$header_font: "abril-titling";
+$body_font:"petala-pro", helvetica;
+$header_size:30px;
+$subheader_size:16px;
+$bodysubheader_size:24px;
+$filter_font:18px;
+$body_size:14px;
+
+//-------COLORS------------//
+$background_color:#eeefed;
+$background_color_alt:#DCDCDB;
+$background_white:#FFFFFF;
+$main_theme:#6b9b6c;
+$font_color:#333333;
+$accent_color:#DB5936;
+$button_color:#3c5077;
+$button_color_alt:#D26B4E;
+$button_alt_hover:#DA5A3D;
+$event_color:#D5D6DC;
+
+
+$tot-width: 100%;
+$num-col: 12;
+$gut-width: 5%;
+
+$ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
+
+@mixin grid($geezy){
+  width: ($geezy * $ind-col-width) + ($gut-width * ($geezy - 1));
+  float: left;
+  margin-right: $gut-width;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.row {
+
+  margin:0 auto;
+ 
+}
+
+.col {
+  
+}
+
+@media (min-width: 595px){
+  .col {
+    margin-bottom: 0;
+  }
+  .col-1 {
+    @include grid(1);
+  }
+
+  .col-2 {
+    @include grid(2);
+  }
+
+  .col-3 {
+    @include grid(3);
+  }
+
+  .col-4 {
+     @include grid(4);
+  }
+  
+  .col-5 {
+     @include grid(5);
+  }
+  .col-6 {
+     @include grid(6);
+  }
+  .col-7 {
+     @include grid(7);
+  }
+  .col-8 {
+     @include grid(8);
+  }
+  .col-9 {
+     @include grid(9);
+  }
+  .col-10 {
+     @include grid(10);
+  }
+  .col-11 {
+     @include grid(11);
+  }
+  .col-12 {
+     @include grid(12);
+  }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+		    "normalize",
+        "dash",
+        "layout",
+        "syntax-highlighting",
+        "breakpoint1",
+        "home",
+        "events",
+        "profile"
+;

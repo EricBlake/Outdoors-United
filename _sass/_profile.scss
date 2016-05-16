@@ -1,0 +1,523 @@
+p {
+	margin: 0;
+}
+
+.prof_wrapper{
+	overflow:hidden;
+
+	
+
+	.prof_sect{
+		
+		padding-top: 2em;
+		background: url("/images/profilebackgroundmedium.png");
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:bottom;
+		overflow: hidden;
+		width: 100%;
+
+		
+
+
+		.prof_pic{
+			background: url("/images/profilepic2.png");
+			height: 8em;
+			width: 8em;
+			background-size:cover;
+			background-repeat:no-repeat;
+			margin:0 auto;
+			border:0.5em solid $background_color;
+			box-shadow: 2px 2px 2px rgba(0,0,0,.15);
+
+			
+
+			}//closing prof_pic
+		
+		.prof_info{
+			text-align: center;
+
+			h1{
+				font-family: $body_font;
+				font-size: $header_size;
+				color:$background_color;
+				margin:0;
+				text-shadow: 2px 2px 2px rgba(0,0,0,.35);
+
+			}
+			h2{
+				font-family: $body_font;
+				font-size: $subheader_size;
+				color:$background_color;
+				padding-bottom:2em;
+				margin-top:1em;
+				margin:0 auto;
+				text-shadow: 2px 2px 2px rgba(0,0,0,.35);
+			}
+
+
+			}//closing prof_info
+
+	}//closing prof_sect
+
+	
+
+
+	
+	.prof_photos{
+		
+		background-color:$background_white;
+		box-sizing:border-box;
+		margin: 0 auto;
+		overflow: hidden;
+		padding:1em;
+
+
+
+
+		h1{
+			font-family: $body_font;
+			font-size: $bodysubheader_size;
+			color: $font_color;
+			text-align: center;
+
+
+		}
+
+		.prof_trip_img{
+			box-sizing:border-box;
+			overflow: hidden;
+			width: 50%;
+			margin:0 auto;
+			background-color:$background_white;
+			box-sizing:border-box;
+			float: left;
+		
+
+
+
+
+			img{
+							
+				width: 100%;
+				box-shadow: 2px 2px 2px rgba(0,0,0,.15);
+				margin:0.5em;
+				margin-bottom: 0;
+				
+
+
+
+			}
+			
+		}
+	}//closing prof_photos
+
+
+
+
+
+	.prof_friends{
+			clear: both;
+			background-color:$background_color;
+			overflow: hidden;
+			border:1px solid $font_color;
+			margin:2%;
+			border-radius:5px;
+			
+			
+
+			h1{
+				font-family: $body_font;
+				font-size: $bodysubheader_size;
+				color: $font_color;
+				text-align: center;
+
+			}
+
+
+
+			.prof_friend{
+				margin:2%;
+				clear: both;
+
+					.friend_img {
+						width: 25%;
+						float: left;
+						img{
+						width: 100%;
+						box-shadow: 2px 2px 2px rgba(0,0,0,.15);
+
+
+					}
+					}
+				
+					
+				
+				
+				}//closing friend_img
+				p{
+					color: $font_color;
+					font-family: $body_font;
+					font-weight: 800;
+					float: left;
+					padding-left: 0.5em;
+				}
+
+	
+
+			.find_more_button{
+					clear: both;
+					display: block;
+					color: $font_color;
+					font-family: $body_font;
+					font-size: $subheader_size;
+					text-decoration: none;
+					background-color:$button_color_alt;
+					margin:0 auto;
+					width: 200px;
+					text-align:center;
+					padding:0.5em;
+					border-radius:5px;
+					margin-bottom: 1em;
+					box-shadow: 2px 2px 2px rgba(0,0,0,.15);
+
+
+					a{
+						text-decoration: none;
+						color: $background_color;
+						
+
+
+
+					}
+				}
+
+				.find_more_button:hover{
+					background-color:$button_alt_hover;
+				}
+		}//closing dash_friends tag
+
+		.prof_items{
+			box-sizing:border-box;
+			text-align: center;
+			border:1px solid $font_color;
+			margin:2%;
+			border-radius:5px;
+
+
+			h1{
+				font-family: $body_font;
+				font-size: $bodysubheader_size;
+				color:$font_color;
+			}
+
+
+			ul{
+				display: inline-block;
+				font-family: $body_font;
+				color: $font_color;
+				line-height: 1.5em;
+				list-style:none;
+				text-align: left;
+
+				li{
+					display: block;
+				}
+				
+			}
+
+			.update_items_btn{
+					clear: both;
+					display: block;
+					color: $font_color;
+					font-family: $body_font;
+					font-size: $subheader_size;
+					text-decoration: none;
+					background-color:$button_color_alt;
+					margin:0 auto;
+					width: 200px;
+					text-align:center;
+					padding:0.5em;
+					border-radius:5px;
+					margin-bottom: 1em;
+					box-shadow: 2px 2px 2px rgba(0,0,0,.15);
+
+
+					a{
+						text-decoration: none;
+						color:$background_color;
+
+
+					}
+				}
+
+				.update_items_btn:hover{
+					background-color:$button_alt_hover;
+				}
+		}//closing prof_items
+
+
+}//closing prof_wrapper
+
+@media(min-width:650px){
+
+
+	.prof_cont_wrapper{
+	margin-top:2%;
+
+		.prof_photos{
+			width:90%;
+			border-radius:5px;
+			box-shadow: 2px 2px 2px rgba(0,0,0,.15);
+			overflow: hidden;
+
+			.prof_trip_img{
+			width: 25%;
+			margin:0 auto;
+			margin-bottom: 0;
+
+			img{
+				margin:1%;
+				margin-top: 0;
+			}
+
+		}
+
+		}//closing prof_photos
+
+	}
+
+	.friend_item_wrapper{
+		
+		overflow: hidden;
+		margin:0 auto;
+		width: 90%;
+		padding-top:1em;
+
+
+		.prof_friends{
+			box-sizing:border-box;
+			padding:0.5em;
+			width: 49%;
+			float:left;
+			margin:0 auto;
+			border-radius:5px;
+			background-color:$background_color;
+			border:1px solid $font_color;
+
+			
+		}
+
+		.prof_items{
+			box-sizing:border-box;
+			width: 49%;
+			float:right;
+			margin:0 auto;
+			border-radius:5px;
+			background-color:$background_color;
+			border:1px solid $font_color;
+			padding:0.5em;
+
+			ul{
+				padding-left:0;
+			}
+			
+		}
+
+
+	}//closing friend_item_wrapper
+
+
+}//closing mediary
+
+
+
+
+@media(min-width:950px){
+
+	//--------------------------------------------Profile breakpoint 2-----//
+
+
+	.prof_wrapper{
+		background-color:$background_color;
+		box-sizing:border-box;
+		overflow: hidden;
+		
+
+
+		
+
+		.prof_sect{
+			padding-top: 2em;
+			background: url("/images/profilebackgroundmedium.png");
+			background-size:cover;
+			background-repeat:no-repeat;
+			background-size:100% 100%;
+			overflow: hidden;
+			margin-bottom:2em;
+
+			.prof_pic{
+			background: url("/images/profilepic2.png");
+			height: 10em;
+			width: 10em;
+			background-size:cover;
+			background-repeat:no-repeat;
+			margin:0 auto;
+			border:0.5em solid $background_color;
+
+			
+
+			}//closing prof_pic
+		}
+	.prof_cont_wrapper{
+
+		max-width: 1000px;
+		margin:0 auto;
+		.prof_photos{
+		
+		background-color:$background_white;
+		box-sizing:border-box;
+		margin: 0 auto;
+		overflow: hidden;
+		width: 70%;
+		float:left;
+		border-radius:5px;
+
+
+
+		h1{
+			font-family: $body_font;
+			font-size: $bodysubheader_size;
+			color: $font_color;
+			text-align: center;
+
+
+		}
+
+		.prof_trip_img{
+		
+			width: 33.3333%;
+			
+		
+		}
+	}//closing prof_photos
+
+		
+
+		
+.friend_item_wrapper{
+	box-sizing:border-box;
+	overflow:hidden;
+	margin:0 auto;
+	max-width:1000px;
+	padding-top:0;
+	margin-top:0;
+	width:30%;
+	padding-bottom:2em;
+	float:left;
+	padding-left:1em;
+
+	.prof_friends{
+			width: 100%;
+			background-color:$background_color;
+			box-sizing:border-box;
+			border:none;
+			margin-top: 0;
+			padding-top:0;
+
+
+
+				h1{
+					margin-top: 0;
+				}
+			
+			
+
+
+			.prof_friend{
+				display: inline-block;
+				margin:0 auto;
+
+
+				
+
+
+				.friend_img{
+					width: 40%;
+
+					img{
+						width: 100%;
+					}
+
+					}
+				h3{
+					color: $font_color;
+					font-family: $body_font;
+				}
+
+			}//closing dash_friend tag
+
+			
+		}//closing dash_friends tag
+
+		.prof_items{
+			width: 100%;
+			margin:2%;
+			text-align: center;
+			overflow: hidden;
+			box-sizing:border-box;
+			background-color:$background_color;
+			border:none;
+			padding:1em;
+
+			
+			
+
+
+
+			ul{
+				display: inline-block;
+				font-family: $body_font;
+				color: $font_color;
+				line-height: 1.5em;
+				list-style:none;
+				width: 50%;
+				float:left;
+				padding:0;
+
+
+				li{
+					font-size: $body_font;
+
+					input{
+						margin-right:0.5em;
+					}
+				}
+
+				
+			}
+		}//closing prof_items
+	}//closing friend_item_wrapper
+		
+	}//closing prof_cont_wrapper{
+
+	}//closing prof_wrapper
+
+	}//closing media query for Profile page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

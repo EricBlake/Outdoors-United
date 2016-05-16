@@ -1,0 +1,250 @@
+//HOME PAGE STYLING//
+
+
+
+
+	
+	
+
+
+	.home_wrapper{
+	background: url("/images/homebackgroundsmall.png");
+	background-size: 100% 100%;
+	background:contain;
+	overflow:hidden;
+	font-family: $body_font;
+	padding: 6em;
+	box-sizing: border-box;
+
+		
+
+		h1{
+			font-family: $body_font;
+			font-size: 30px;
+			margin: 0 auto;
+			text-align: center;
+			color: $background_color;
+			border: 3px solid $button_color_alt;
+			padding:1em;
+			text-align:center;
+			margin-bottom: 2em;
+			
+			
+		}
+
+		.about_site{
+				width:90%;
+				margin:0 auto;
+
+			h2{
+				font-family: $body_font;
+				font-size: $subheader_size;
+				text-align: center;
+				color: $background_color;
+			}
+
+			p{
+				font-size: $subheader_size;
+				font-family: $body_font;
+				line-height: 1.5em;
+				padding-bottom:3em;
+				margin: 2%;
+				color: $background_color;
+
+			}
+
+
+		}//closing about_site
+
+		.get_started{
+			
+			overflow: hidden;
+			max-width: 736px;
+			margin:0 auto;
+
+			
+
+			.home_btns{
+				
+				overflow: hidden;
+				text-align: center;
+				width: 48%;
+				box-sizing:border-box;
+				background-color:$button_color_alt;
+				border-radius: 5px;
+				box-shadow: 2px 2px 2px rgba(0,0,0,.15);
+			
+
+				
+				a{
+					color:$background_color;
+					text-decoration: none;
+					padding: 0.5em;
+					border-radius: 5px;
+					display: block;
+				
+				}
+			}
+
+			.home_btns:hover{
+				background-color:$button_alt_hover;
+			}
+		}//closing get_started
+
+
+	
+
+	}//closing home_wrapper
+
+	.home_sub{
+
+		overflow: hidden;
+		background-color: #ffffff;
+
+		.about_site{
+			
+			color:$font_color;
+			margin:2%;
+			p{
+				line-height: 1.75em;
+			}
+			.logo{
+				display: none;
+			}
+		}
+
+
+
+	}//closing home_sub
+
+
+@media(min-width:595px){
+	//-------------------------------------------home breakpoint 1-----//
+
+
+		
+		
+	
+			.home_wrapper{
+	background: url("/images/homebackgroundmed.png");
+	background-size: 100% 100%;
+	background:contain;
+	overflow:hidden;
+
+
+		
+
+		h1{
+			font-family: $body_font;
+			font-size: 60px;
+			margin: 0 auto;
+			text-align: center;
+			color: $background_color;
+			border: 8px solid $button_color_alt;
+			padding:1em;
+			text-align:center;
+			margin-bottom: 2em;
+			max-width: 700px;
+			}
+
+		.about_site{
+				width:60%;
+				margin:0 auto;
+
+			h2{
+				font-family: $body_font;
+				font-size: $subheader_size;
+				text-align: center;
+				color: $background_color;
+			}
+
+			p{
+				font-size: $subheader_size;
+				font-family: $body_font;
+				line-height: 1.5em;
+				padding-bottom:3em;
+				margin: 2%;
+				color: $background_color;
+
+			}
+
+
+		}//closing about_site
+
+		.get_started{
+			
+			overflow: hidden;
+			margin: 0 auto;
+
+			
+			.home_btns{
+				box-sizing:border-box;
+				margin:0 auto;
+				overflow: auto;
+				text-align: center;
+				width: 50%;
+			
+				box-sizing:border-box;
+				background-color:$button_color_alt;
+				border-radius: 5px;
+				
+				float:left;
+
+			
+
+				
+				a{
+					color:$background_color;
+					text-decoration: none;
+					padding: 0.5em;
+					border-radius: 5px;
+					display: block;
+				
+				}
+			}
+
+			.home_btns:hover{
+				background-color:$button_alt_hover;
+			}
+		}//closing get_started
+
+
+	
+
+	}//closing home_wrapper
+
+	.home_sub{
+		overflow: hidden;
+		.about_site{
+			color:$font_color;
+
+			h2{
+				text-align: center;
+			}
+			.logo{
+				width: 25%;
+				float: left;
+				display: block;
+			img{
+				width: 100%;
+
+			}
+		}
+
+			p{
+				float: left;
+				width: 50%;
+				line-height: 1.75em;
+				margin:0 auto;
+				padding-bottom:2em;
+				
+
+			}
+		}
+
+
+
+	}//closing home_sub
+
+}//closing media tag
+
