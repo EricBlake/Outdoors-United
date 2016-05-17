@@ -1,154 +1,204 @@
 /***-------------------------------------------------------- Site header*/
 
-.site_header{
+.site_header {
     background-color: $main_theme;
     overflow: hidden;
-  
-
-   
-
-    .header_wrapper{
-        padding:1em;
-
-        .site-title{
+    .header_wrapper {
+        padding: 1em;
+        .site-title {
             font-family: $header_font;
             font-size: 28px;
-            color:$background_color;
+            color: $background_color;
             text-decoration: none;
             display: inline-block;
             font-weight: 800;
-
-
         }
-
-
-        .site-nav{
+        .site-nav {
             float: right;
-            padding-top:0.5em;
+            padding-top: 0.5em;
             overflow: hidden;
             width: 25%;
-            .nav_menu{
+            .nav_menu {
                 float: right;
-                .nav_profile{
+                .nav_profile {
                     margin-right: 2em;
-                    display: inline-block;
+                    display: none;
                     vertical-align: middle;
-
-                    a{
+                    a {
                         text-decoration: none;
                         display: inline-block;
                         vertical-align: middle;
                         color: $background_color;
-
-
-                        img{
+                        img {
                             height: 1.5em;
                             width: 1.5em;
                             display: inline-block;
                         }
-                        
-
-
-
-                        p{
+                        p {
                             display: inline-block;
                             vertical-align: middle;
-                            
                             font-family: $body_font;
-                            color:$background-color;
-
+                            color: $background-color;
                         }
-                        .fa{
+                    }
+                    .active {
+                        display: block;
+                        background-color: #FFFFFF;
+                    }
+                    
+                    .active {
+                        display: block;
+                        background-color: teal;
+                    }
+                } //end of nav_pprofiletag
+                .toggle {
+                    font-family: sans-serif;
+                    color: white;
+                    display: inline-block;
+                    vertical-align: middle;
+                     .fa{
                             color:$background_color;
                         }
                         .fa:hover{
-                            color:$button_alt_hover;
+                            cursor: pointer;
                         }
+                }
+                ul {
+                    list-style: none;
+                    border: 1px solid black;
+                    width: 20%;
+                }
+            } //end of nav_menu tag
+        } //end of site-nav tag
+    } //end of header_wrapper tag
+} //end of site_header tag//
+ul.content {
+    display: none;
+    list-style: none;
+    border-bottom:1px solid $font_color;
+    overflow: hidden;
+    li{
+        float: left;
+        width: 33.33%;
+        box-sizing:border-box;
+        overflow: hidden;
+        margin:0 auto;
+        a{
+            text-decoration: none;
+            font-family: $body_font;
+            font-size: $bodysubheader_size;
+            color: $font_color;
+            font-weight:bold;
+            padding:1em;
+            overflow: hidden;
+            box-sizing:border-box;
+        }
+    }
+    padding-bottom:2em;
+}
 
-                    }
-
-                 
-
-                        .active{
-                          display:block;
-                          background-color:#FFFFFF;
-                        }
-
-
-
-                    .menu-content{
-                          display: none;
-                          list-style:none;
-
-                          li{
-                            display: inline-block;
-
-                                a{
-                                    color:$font_color;
-                                    font-family: $body_font;
-                                }
-                          }
-                        }
-
-                        .active {
-                          display: block;
-                          background-color: teal;
-                        }
-
-
-                }//end of nav_pprofiletag
-
-                .toggle{
-                   
-                          font-family:sans-serif;
-                          color:white;
-                         
-                        display: inline-block;
-                        vertical-align: middle;
-                          
-                          a{
-                            font-family:sans-serif;
-                            font-size:16px;
-                           
-                          }
-                          
-                        }
-
-
-                        ul{
-                          list-style: none;
-                          border: 1px solid black;
-                          width:20%;
-                        }
-
-            }//end of nav_menu tag
-
-
-           
-
-
-        }//end of site-nav tag
-
-    }//end of header_wrapper tag
-
-}//end of site_header tag//
-
-
-  ul.content{
-              display:none;
-            }
-
-.site-footer{
+.site-footer {
     clear: both;
     background-color: $main_theme;
-    height:3em;
+    height: 3em;
     margin-top: 2em;
-    
 }
 
-body{
-    background-color:$background_color;
+body {
+    background-color: $background_color;
 }
+
+@media(min-width:615px) {
+ .site_header {
+    .header_wrapper { 
+        .site-title {
+            font-family: $header_font;
+            font-size: 28px;
+            color: $background_color;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 800;
+        }
+        .site-nav {
+            float: right;
+            padding-top: 0.5em;
+            overflow: hidden;
+            width: 25%;
+            .nav_menu {
+                float: right;
+                .nav_profile {
+                    margin-right: 2em;
+                    display: inline-block;
+                    vertical-align: middle;
+                    a {
+                        text-decoration: none;
+                        display: inline-block;
+                        vertical-align: middle;
+                        color: $background_color;
+                        img {
+                            height: 1.5em;
+                            width: 1.5em;
+                            display: inline-block;
+                        }
+                        p {
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-family: $body_font;
+                            color: $background-color;
+                        }
+                    }
+                    .active {
+                        display: block;
+                        background-color: #FFFFFF;
+                    }
+                    .menu-content {
+                        display: none;
+                        list-style: none;
+                        li {
+                            display: inline-block;
+                            a {
+                                color: $font_color;
+                                font-family: $body_font;
+                            }
+                        }
+                    }
+                    .active {
+                        display: block;
+                        background-color: teal;
+                    }
+                } //end of nav_pprofiletag
+                .toggle {
+                    font-family: sans-serif;
+                    color: white;
+                    display: inline-block;
+                    vertical-align: middle;
+                     .fa{
+                            color:$background_color;
+                        }
+                        .fa:hover{
+                            cursor: pointer;
+                        }
+
+                    a {
+                        font-family: $body_font;
+                        font-size: 16px;
+                    }
+                }
+                ul {
+                    list-style: none;
+                    border: 1px solid black;
+                    width: 20%;
+                }
+            } //end of nav_menu tag
+        } //end of site-nav tag
+    } //end of header_wrapper tag
+} //end of site_header tag//
+ul.content {
+    display: none;
+}
+}
+
+
 
 
 

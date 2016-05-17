@@ -43,4 +43,3 @@ $('.toggle').click(function(){
   $('.content').slideToggle(900);
 });
 
-if ( $('#test')[0].type != 'date' ) $('#test').datepicker();
