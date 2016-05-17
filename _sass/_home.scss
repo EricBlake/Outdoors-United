@@ -25,7 +25,7 @@
 			text-align: center;
 			color: $background_color;
 			border: 3px solid $button_color_alt;
-			padding:1em;
+			padding:0.75em;
 			text-align:center;
 			margin-bottom: 2em;
 			text-shadow: 2px 2px 2px rgba(0,0,0,.25);
@@ -34,7 +34,7 @@
 		}
 
 		.about_site{
-				width:90%;
+				width:100%;
 				margin:0 auto;
 
 			h2{
@@ -170,6 +170,7 @@
 			.home_btns{
 			max-width: 600px;
 			margin:0 auto;
+
 				
 
 				li{
@@ -225,7 +226,7 @@
 		overflow: hidden;
 		.about_site{
 				margin:0 auto;
-				
+				width: 90%;
 				max-width: 1000px;
 
 			h2{
@@ -236,23 +237,23 @@
 			}
 			.logo:first-of-type{
 				display: inline-block;
-				width: 25%;
-				float: left;
+				width: 20%;
+				
 				margin:0 auto;
-				vertical-align: middle;
+				
 				img{
-					width: 80%;
+					width: 100%;
 
 				}
 			}
 			.logo:nth-of-type(2){
 				display: inline-block;
-				width: 25%;
-				float: left;
+				width: 20%;
+				
 				margin:0 auto;
-				vertical-align: middle;
+			
 				img{
-					width: 80%;
+					width: 100%;
 
 				}
 			}
@@ -260,13 +261,14 @@
 			p{
 				font-size: $subheader_size;
 				font-family: $body_font;
-				line-height: 1.5em;
+				line-height: 1.75em;
 				box-sizing:border-box;
-				margin: 2%;
+				display: inline-block;
+				margin: 0 auto;
 				color: $font_color;
-				float: left;
-				width: 45%;
-				vertical-align: middle;
+				
+				width: 58%;
+			
 
 			}
 
