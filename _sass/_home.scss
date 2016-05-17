@@ -14,13 +14,13 @@
 	overflow:hidden;
 	font-family: $body_font;
 	padding: 6em;
-	box-sizing: border-box;
+	
 
 		
 
 		h1{
 			font-family: $body_font;
-			font-size: 30px;
+			font-size: $header-size;
 			margin: 0 auto;
 			text-align: center;
 			color: $background_color;
@@ -28,6 +28,7 @@
 			padding:1em;
 			text-align:center;
 			margin-bottom: 2em;
+			text-shadow: 2px 2px 2px rgba(0,0,0,.25);
 			
 			
 		}
@@ -56,40 +57,48 @@
 
 		}//closing about_site
 
-		.get_started{
-			
-			overflow: hidden;
-			max-width: 736px;
-			margin:0 auto;
+		
 
 			
 
 			.home_btns{
+				list-style: none;
+				box-sizing:border-box;
+				padding:0;
 				
+				
+
+				li{
+				width: 100%;
+				display: inline-block;
 				overflow: hidden;
 				text-align: center;
-				width: 48%;
 				box-sizing:border-box;
 				background-color:$button_color_alt;
 				border-radius: 5px;
+				margin:0 auto;
+				padding:0.75em;
+				margin-bottom:1.5em;
 				box-shadow: 2px 2px 2px rgba(0,0,0,.15);
-			
 
 				
+				
+
 				a{
+					
 					color:$background_color;
 					text-decoration: none;
-					padding: 0.5em;
-					border-radius: 5px;
-					display: block;
+					display: inline;
+					
 				
+				}
 				}
 			}
 
-			.home_btns:hover{
+			li:hover{
 				background-color:$button_alt_hover;
 			}
-		}//closing get_started
+	
 
 
 	
@@ -99,12 +108,16 @@
 	.home_sub{
 
 		overflow: hidden;
-		background-color: #ffffff;
+		background-color: $background_white;
+		padding-bottom:3em;
+		font-family: $body_font;
 
 		.about_site{
-			
 			color:$font_color;
 			margin:2%;
+			h2{
+				font-size: $bodysubheader_size;
+			}
 			p{
 				line-height: 1.75em;
 			}
@@ -118,7 +131,7 @@
 	}//closing home_sub
 
 
-@media(min-width:595px){
+@media(min-width:630px){
 	//-------------------------------------------home breakpoint 1-----//
 
 
@@ -146,66 +159,61 @@
 			max-width: 700px;
 			}
 
-		.about_site{
-				width:60%;
-				margin:0 auto;
+		
 
-			h2{
-				font-family: $body_font;
-				font-size: $subheader_size;
-				text-align: center;
-				color: $background_color;
-			}
-
-			p{
-				font-size: $subheader_size;
-				font-family: $body_font;
-				line-height: 1.5em;
-				padding-bottom:3em;
-				margin: 2%;
-				color: $background_color;
-
-			}
-
-
-		}//closing about_site
-
-		.get_started{
+		
 			
-			overflow: hidden;
-			margin: 0 auto;
+			
 
 			
+
 			.home_btns{
-				box-sizing:border-box;
-				margin:0 auto;
-				overflow: auto;
+			max-width: 600px;
+			margin:0 auto;
+				
+
+				li{
+				width: 45%;
+				
+				overflow: hidden;
 				text-align: center;
-				width: 50%;
-			
 				box-sizing:border-box;
 				background-color:$button_color_alt;
 				border-radius: 5px;
+				padding:1em;
+				box-shadow: 2px 2px 2px rgba(0,0,0,.15);
 				
-				float:left;
 
-			
 
 				
+				
+
 				a{
+					
 					color:$background_color;
 					text-decoration: none;
-					padding: 0.5em;
-					border-radius: 5px;
-					display: block;
+					display: inline;
+					font-size: $filter_font;
+
+					
 				
 				}
+				}
+				li:first-of-type{
+					float:left;
+				}
+				li:nth-of-type(2){
+					float:right;
+				}
+
 			}
 
-			.home_btns:hover{
+			li:hover{
 				background-color:$button_alt_hover;
 			}
-		}//closing get_started
+	
+
+		
 
 
 	
@@ -213,33 +221,59 @@
 	}//closing home_wrapper
 
 	.home_sub{
+		clear: both;
 		overflow: hidden;
 		.about_site{
-			color:$font_color;
+				margin:0 auto;
+				
+				max-width: 1000px;
 
 			h2{
+				font-family: $body_font;
+				font-size: $bodysubheader_size;
 				text-align: center;
+				color: $font_color;
 			}
-			.logo{
+			.logo:first-of-type{
+				display: inline-block;
 				width: 25%;
 				float: left;
-				display: block;
-			img{
-				width: 100%;
+				margin:0 auto;
+				vertical-align: middle;
+				img{
+					width: 80%;
 
+				}
 			}
-		}
+			.logo:nth-of-type(2){
+				display: inline-block;
+				width: 25%;
+				float: left;
+				margin:0 auto;
+				vertical-align: middle;
+				img{
+					width: 80%;
+
+				}
+			}
 
 			p{
+				font-size: $subheader_size;
+				font-family: $body_font;
+				line-height: 1.5em;
+				box-sizing:border-box;
+				margin: 2%;
+				color: $font_color;
 				float: left;
-				width: 50%;
-				line-height: 1.75em;
-				margin:0 auto;
-				padding-bottom:2em;
-				
+				width: 45%;
+				vertical-align: middle;
 
 			}
-		}
+
+			
+
+
+		}//closing about_site
 
 
 

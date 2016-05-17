@@ -43,31 +43,22 @@
                     }
                     .active {
                         display: block;
-                        background-color: #FFFFFF;
+                        background-color: $background_color_alt;
                     }
                     
-                    .active {
-                        display: block;
-                        background-color: teal;
-                    }
                 } //end of nav_pprofiletag
                 .toggle {
-                    font-family: sans-serif;
-                    color: white;
+                    
                     display: inline-block;
                     vertical-align: middle;
-                     .fa{
-                            color:$background_color;
-                        }
-                        .fa:hover{
-                            cursor: pointer;
-                        }
+                    .fa {
+                        color: $background_color;
+                    }
+                    .fa:hover {
+                        cursor: pointer;
+                    }
                 }
-                ul {
-                    list-style: none;
-                    border: 1px solid black;
-                    width: 20%;
-                }
+                
             } //end of nav_menu tag
         } //end of site-nav tag
     } //end of header_wrapper tag
@@ -75,33 +66,41 @@
 ul.content {
     display: none;
     list-style: none;
-    border-bottom:1px solid $font_color;
     overflow: hidden;
-    li{
-        float: left;
-        width: 33.33%;
-        box-sizing:border-box;
+    margin-bottom:0;
+    margin-top:0;
+    text-align: center;
+    background-color:$background_color_alt; 
+    li {
+        display: inline-block;
+        width: 50%;
+        box-sizing: border-box;
         overflow: hidden;
-        margin:0 auto;
-        a{
+        margin: 0 auto;
+        border-bottom:1px solid $font_color;
+
+        a {
             text-decoration: none;
             font-family: $body_font;
             font-size: $bodysubheader_size;
             color: $font_color;
-            font-weight:bold;
-            padding:1em;
-            overflow: hidden;
-            box-sizing:border-box;
+            font-weight: bold;
+            padding: 1em;
+            line-height: 2em;
+            border-width:90%;
         }
     }
-    padding-bottom:2em;
+    li:last-child{
+            border-bottom:none;
+        }
+   
 }
 
 .site-footer {
     clear: both;
     background-color: $main_theme;
     height: 3em;
-    margin-top: 2em;
+    
 }
 
 body {
@@ -109,92 +108,99 @@ body {
 }
 
 @media(min-width:615px) {
- .site_header {
-    .header_wrapper { 
-        .site-title {
-            font-family: $header_font;
-            font-size: 28px;
-            color: $background_color;
-            text-decoration: none;
-            display: inline-block;
-            font-weight: 800;
-        }
-        .site-nav {
-            float: right;
-            padding-top: 0.5em;
-            overflow: hidden;
-            width: 25%;
-            .nav_menu {
+    .site_header {
+        .header_wrapper {
+            .site-title {
+                font-family: $header_font;
+                font-size: 28px;
+                color: $background_color;
+                text-decoration: none;
+                display: inline-block;
+                font-weight: 800;
+            }
+            .site-nav {
                 float: right;
-                .nav_profile {
-                    margin-right: 2em;
-                    display: inline-block;
-                    vertical-align: middle;
-                    a {
-                        text-decoration: none;
+                padding-top: 0.5em;
+                overflow: hidden;
+                width: 25%;
+                .nav_menu {
+                    float: right;
+                    .nav_profile {
+                        margin-right: 2em;
                         display: inline-block;
                         vertical-align: middle;
-                        color: $background_color;
-                        img {
-                            height: 1.5em;
-                            width: 1.5em;
-                            display: inline-block;
-                        }
-                        p {
+                        a {
+                            text-decoration: none;
                             display: inline-block;
                             vertical-align: middle;
-                            font-family: $body_font;
-                            color: $background-color;
-                        }
-                    }
-                    .active {
-                        display: block;
-                        background-color: #FFFFFF;
-                    }
-                    .menu-content {
-                        display: none;
-                        list-style: none;
-                        li {
-                            display: inline-block;
-                            a {
-                                color: $font_color;
+                            color: $background_color;
+                            img {
+                                height: 1.5em;
+                                width: 1.5em;
+                                display: inline-block;
+                            }
+                            p {
+                                display: inline-block;
+                                vertical-align: middle;
                                 font-family: $body_font;
+                                color: $background-color;
                             }
                         }
-                    }
-                    .active {
-                        display: block;
-                        background-color: teal;
-                    }
-                } //end of nav_pprofiletag
-                .toggle {
-                    font-family: sans-serif;
-                    color: white;
-                    display: inline-block;
-                    vertical-align: middle;
-                     .fa{
-                            color:$background_color;
+                       
+        
+                        .active {
+                           
                         }
-                        .fa:hover{
+                    } //end of nav_pprofiletag
+                    .toggle {
+                        font-family: sans-serif;
+                        color: white;
+                        display: inline-block;
+                        vertical-align: middle;
+                        .fa {
+                            color: $background_color;
+                        }
+                        .fa:hover {
                             cursor: pointer;
                         }
-
-                    a {
-                        font-family: $body_font;
-                        font-size: 16px;
+                        
                     }
-                }
-                ul {
-                    list-style: none;
-                    border: 1px solid black;
-                    width: 20%;
-                }
-            } //end of nav_menu tag
-        } //end of site-nav tag
-    } //end of header_wrapper tag
-} //end of site_header tag//
-ul.content {
+                    
+                } //end of nav_menu tag
+            } //end of site-nav tag
+        } //end of header_wrapper tag
+    } //end of site_header tag//
+    ul.content {
     display: none;
+    list-style: none;
+    overflow: hidden;
+    margin-bottom:0;
+    margin-top:0;
+    text-align: center;
+    background-color:$background_color_alt; 
+
+    li {
+        display: inline;
+        width: 33.33%;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin: 0 auto;
+        border-bottom:none;
+
+        a {
+            text-decoration: none;
+            font-family: $body_font;
+            font-size: $bodysubheader_size;
+            color: $font_color;
+            font-weight: bold;
+            overflow: hidden;
+            
+           
+           
+        }
+    }
+    
+   
 }
 }
 
