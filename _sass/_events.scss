@@ -172,6 +172,7 @@
             } //closing search option 2
             //---------------------------------------rec events on events page
             .recomended_events {
+
                 clear: both;
                 box-sizing: border-box;
                 overflow: hidden;
@@ -442,6 +443,46 @@
             background-color: $button_alt_hover;
         }
     } //closing search option 2
+    .recomended_events {
+            
+                clear: both;
+                box-sizing: border-box;
+                overflow: hidden;
+                padding: .5em;
+                color: $font_color;
+                .rec_img {
+                    float: left;
+                    width: 30%;
+                    img {
+                        width: 100%;
+                        box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+                    }
+                }//closing recimg
+                .rec_cont {
+                    padding-left: 1em;
+                    float:left;
+                    width: 70%;
+                    box-sizing: border-box;
+                    h2 {
+                        margin-left: 2em;
+                        font-size: $subheader_size;
+                        font-family: $body_font;
+                        margin-bottom: 0em;
+                    }
+                    p {
+                        font-family: $body_font;
+                        font-size: $body_size;
+                    }
+                    p:first-of-type {
+                        font-weight: bold;
+                    }
+                    a {
+                        font-family: $body_font;
+                        font-size: $body_size;
+                        color: $button_color;
+                    }
+                } //closing rec_cont
+            } //closing recomended_events//
 } //closing media
 
 
