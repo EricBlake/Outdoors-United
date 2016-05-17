@@ -31,6 +31,7 @@
         clear: both;
         box-sizing: border-box;
         background-color: $background_white;
+        padding-bottom: 2%;
     } //closing tab content
         //-------------------------filter options---------------------//
         .search_option_1 {
@@ -507,7 +508,7 @@
     .upcoming_wrapper {
             background-color: $background-color;
             overflow: hidden;
-            width: 25%;
+            width: 30%;
             float: right;
             box-sizing:border-box;
             padding-top:7em;
@@ -558,7 +559,7 @@
 
 
     .tab-wrapper{
-        width: 70%;
+        width: 65%;
         margin:0 auto;
         float: left;
         margin-left:2%;;
@@ -567,6 +568,7 @@
          .tab-content {
             box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
             border-radius:5px;
+            margin-bottom:5em;
         
 
 
@@ -579,6 +581,7 @@
         background-color:$background_color;
         max-width: 1200px;
         margin: 0 auto;
+
 
     }
 } //closing media
