@@ -5,6 +5,7 @@ p {
 .prof_wrapper{
 	overflow:hidden;
 
+
 	
 
 	.prof_sect{
@@ -124,6 +125,7 @@ p {
 			border:1px solid $font_color;
 			margin:2%;
 			border-radius:5px;
+			padding-bottom:1em;
 			
 			
 
@@ -140,6 +142,8 @@ p {
 			.prof_friend{
 				margin:2%;
 				clear: both;
+				margin-bottom: 1em;
+				overflow: hidden;
 
 					.friend_img {
 						width: 25%;
@@ -162,6 +166,7 @@ p {
 					font-weight: 800;
 					float: left;
 					padding-left: 0.5em;
+
 				}
 
 	
@@ -181,6 +186,7 @@ p {
 					border-radius:5px;
 					margin-bottom: 1em;
 					box-shadow: 2px 2px 2px rgba(0,0,0,.15);
+					margin-top: 1em;
 
 
 					a{
@@ -261,6 +267,10 @@ p {
 }//closing prof_wrapper
 
 @media(min-width:650px){
+	prof_wrapper{
+		box-sizing:border-box;
+		padding:2em;
+	}
 
 
 	.prof_cont_wrapper{
@@ -372,8 +382,10 @@ p {
 		}
 	.prof_cont_wrapper{
 
+
 		max-width: 1000px;
 		margin:0 auto;
+
 		.prof_photos{
 		
 		background-color:$background_white;
@@ -383,6 +395,7 @@ p {
 		width: 70%;
 		float:left;
 		border-radius:5px;
+		margin-bottom: 2%;
 
 
 

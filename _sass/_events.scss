@@ -108,7 +108,7 @@
                         width: 30%;
                     }
                     .distance{
-                        width: 70%;
+                        width: 50%;
                         float: right;
                     }
                     
@@ -171,9 +171,11 @@
                 }
             } //closing search option 2
             //---------------------------------------rec events on events page
+            .recomended_events_wrapper{
+                clear: both;
             .recomended_events {
 
-                clear: both;
+  
                 box-sizing: border-box;
                 overflow: hidden;
                 padding: .5em;
@@ -211,6 +213,7 @@
                     }
                 } //closing rec_cont
             } //closing recomended_events//
+            }// .closingrecomended_events_wrapper{
             .create_events {
                 margin-top: 2em;
                 box-sizing: border-box;
@@ -317,8 +320,11 @@
   
 @media(min-width:750px) {
     .tab {
-        width: 20%;
+        width: 25%;
+        margin-left:0;
+        margin-right:2%;
     } //closing tab
+
     .search_option_1 {
         text-align: center;
         box-sizing: border-box;
@@ -362,7 +368,7 @@
             }
             select {
                 float: left;
-                width: 15%;
+                width: 20%;
             }
         } //closing number people
         .event_distance {
@@ -379,10 +385,10 @@
                 color: $font_color;
                 font-size: $filter_font;
                 float: left;
-                width: 60%;
+                width: 50%;
             }
             .distance {
-                width: 30%;
+                width: 40%;
                 float: left;
             }
         } //closing event distance
@@ -443,46 +449,138 @@
             background-color: $button_alt_hover;
         }
     } //closing search option 2
-    .recomended_events {
+
+    .recomended_events_wrapper{
+        overflow: hidden;
+        clear: both;
+        margin-top:2em;
+        .recomended_events {
             
-                clear: both;
+            width: 48%;
+            box-sizing: border-box;
+            overflow: hidden;
+            padding: 1em;
+            color: $font_color;
+            float: left;
+            border:1px solid $font_color;
+            border-radius:5px;
+            margin-left:1%;
+            margin-right:1%;
+            margin-bottom: 1%;
+            margin-top:1%;
+
+            .rec_img {
+            float: left;
+            width: 50%;
+            img {
+                width: 100%;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+                 }
+            }//closing recimg
+            .rec_cont {
+                padding-left: 1em;
+                float:left;
+                width: 40%;
                 box-sizing: border-box;
-                overflow: hidden;
-                padding: .5em;
-                color: $font_color;
-                .rec_img {
-                    float: left;
-                    width: 30%;
-                    img {
-                        width: 100%;
-                        box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
-                    }
-                }//closing recimg
-                .rec_cont {
-                    padding-left: 1em;
-                    float:left;
-                    width: 70%;
-                    box-sizing: border-box;
-                    h2 {
-                        margin-left: 2em;
-                        font-size: $subheader_size;
-                        font-family: $body_font;
-                        margin-bottom: 0em;
-                    }
+
+                    
                     p {
                         font-family: $body_font;
                         font-size: $body_size;
                     }
-                    p:first-of-type {
+                     p:first-of-type {
+                        font-size: $subheader_size;
                         font-weight: bold;
+                        line-height: 1.5em;
                     }
+                   
                     a {
                         font-family: $body_font;
                         font-size: $body_size;
                         color: $button_color;
                     }
-                } //closing rec_cont
-            } //closing recomended_events//
+            } //closing rec_cont
+
+        } //closing recomended_events//
+    }//closing recomended_events_wrapper 
+
+    .upcoming_wrapper {
+            background-color: $background-color;
+            overflow: hidden;
+            width: 25%;
+            float: right;
+            box-sizing:border-box;
+            padding-top:7em;
+            h2 {
+                font-family: $body_font;
+                margin: 2%;
+            }
+            .upcoming_events {
+                margin: 2%;
+                clear: both;
+                overflow: hidden;
+                box-sizing:border-box;
+
+                .upcoming_img {
+                    width: 27%;
+                    float: left;
+                    img {
+                        width: 100%;
+                        box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+                    }
+                }
+                .upcoming_cont {
+                    padding-left: 0.5em;
+                    float: left;
+                    width: 70%;
+                    p {
+                        font-family: $body_font;
+                    }
+                    p:first-of-type {
+                        font-weight: bold;
+                        line-height: 1.5em;
+                    }
+                    a {
+                        margin-top: 0.5em;
+                        font-family: $body_font;
+                        font-size: $body_font;
+                        color: $button_color;
+                    }
+                } //closing upcoming cont
+            } //closing upcoming_events
+        } //upcoming_wrapper
+
+
+
+
+
+
+
+
+    .tab-wrapper{
+        width: 70%;
+        margin:0 auto;
+        float: left;
+        margin-left:2%;;
+
+    
+         .tab-content {
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+            border-radius:5px;
+        
+
+
+        } //closing tab content
+    
+    }
+    .event_wrapper{
+        overflow: hidden;
+        box-sizing:border-box;
+        background-color:$background_color;
+        max-width: 1200px;
+        margin: 0 auto;
+
+    }
 } //closing media
 
 
