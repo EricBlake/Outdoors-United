@@ -33,6 +33,21 @@
         background-color: $background_white;
         padding-bottom: 2%;
     } //closing tab content
+    
+    //svg
+    .tent, .boot {
+        cursor: pointer;
+    }
+    .stroke{fill:#6B9D6D;
+        stroke-width: 2;}
+    .background{fill:#FEFEFE;}
+
+    .search_wrapper{
+        overflow: hidden;
+        margin-bottom: 1em;
+        padding-bottom:1em;
+        border-bottom:1px solid $background_color;
+    }
         //-------------------------filter options---------------------//
         .search_option_1 {
             text-align: center;
@@ -54,9 +69,10 @@
                     text-align:left;
                     font-weight: bold;
                     color: $font_color;
-                    font-size: $filter_font;
+                    font-size: $subheader_size;
                     float:left;
                     width: 30%;
+                    margin-bottom: 0.5em;
                 }
                 .input_img{
                      width: 20%;
@@ -83,7 +99,7 @@
                    text-align:left;
                     font-weight: bold;
                     color: $font_color;
-                    font-size: $filter_font;
+                    font-size: $subheader_size;
                     float:left;
                     width: 70%;
                   }
@@ -104,7 +120,7 @@
                         text-align:left;
                         font-weight: bold;
                         color: $font_color;
-                        font-size: $filter_font;
+                        font-size: $subheader_size;
                         float:left;
                         width: 30%;
                     }
@@ -135,7 +151,7 @@
                        text-align:left;
                         font-weight: bold;
                         color: $font_color;
-                        font-size: $filter_font;
+                        font-size: $subheader_size;
                         float:left;
                         width: 30%;
                         
@@ -215,20 +231,56 @@
                 } //closing rec_cont
             } //closing recomended_events//
             }// .closingrecomended_events_wrapper{
+
+            .my_events_p{
+                 font-family: $body_font;
+                        margin: 0;
+                        font-size: $filter_font;
+                        margin: 0.5em;
+                font-weight:bold;
+            }
+
             .create_events {
-                margin-top: 2em;
-                box-sizing: border-box;
-                overflow: hidden;
-                padding: .5em;
-                color: $font_color;
-                .rec_img {
-                    float: left;
-                    width: 30%;
-                    img {
-                        width: 100%;
-                        box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
-                    }//closing img
-                } //closing rec_img
+                 box-sizing: border-box;
+            overflow: hidden;
+            padding: 1em;
+            color: $font_color;
+            float: left;
+            border:1px solid $background_color;
+            border-radius:5px;
+            margin-left:1%;
+            margin-right:1%;
+            margin-bottom: 1%;
+            margin-top:1%;
+
+
+             .rec_cont {
+                p {
+                        font-family: $body_font;
+                        margin: 0;
+                        font-size: $body_size;
+                    }
+                     p:first-of-type {
+                        font-size: $subheader_size;
+                        font-weight: bold;
+                        line-height: 1.5em;
+                    }
+                   
+                    a {
+                        font-family: $body_font;
+                        font-size: $body_size;
+                        color: $button_color;
+                    }
+            
+             }
+            .rec_img {
+            float: left;
+            width: 25%;
+            img {
+                width: 100%;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+                 }
+            }//closing recimg
                 .rec_cont {
                     padding-left: 1em;
                     float: left;
@@ -242,7 +294,6 @@
                         font-family: $body_font;
                         font-size: $subheader_size;
                         line-height: 1.5em;
-                        margin-bottom: 2em;
                     }
                     p:first-of-type {
                         font-weight: bold;
@@ -282,10 +333,11 @@
             overflow: hidden;
             h2 {
                 font-family: $body_font;
-                margin: 2%;
+               
+                padding-bottom:1em;
             }
             .upcoming_events {
-                margin: 2%;
+                margin-bottom:2em;
                 clear: both;
                 .upcoming_img {
                     width: 25%;
@@ -300,16 +352,19 @@
                     float: left;
                     p {
                         font-family: $body_font;
+                        font-size: $body_size;
                     }
                     p:first-of-type {
                         font-weight: bold;
                         line-height: 1.5em;
+                        font-size: $body_size;
                     }
                     a {
                         margin-top: 0.5em;
                         font-family: $body_font;
                         font-size: $body_font;
                         color: $button_color;
+                        font-size: $body_size;
                     }
                 } //closing upcoming cont
             } //closing upcoming_events
@@ -321,23 +376,25 @@
   
 @media(min-width:750px) {
     .tab {
-        width: 25%;
+        width: 35%;
         margin-left:0;
         margin-right:2%;
     } //closing tab
 
+
+
     .search_option_1 {
         text-align: center;
         box-sizing: border-box;
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-        clear: both;
+        width: 50%;
+        float: left;
+        clear: none;
         overflow: hidden;
+        font-family: $body_font;
         .event_type {
             margin: 0;
             text-align: left;
-            width: 33.33%;
+            width: 100%;
             overflow: hidden;
             margin-right: 0;
             float: left;
@@ -345,19 +402,23 @@
             p {
                 box-sizing: border-box;
                 float: left;
-                width: 40%;
+                width: 20%;
+
             }
             .input_img {
                 box-sizing: border-box;
                 width: 20%;
                 float: left;
                 text-align: center;
+                img {
+                    width: 100%;
+                }
             }
         } //closing event_type
         .number_people {
             margin: 0;
             text-align: left;
-            width: 33.33%;
+            width: 100%;
             overflow: hidden;
             margin-right: 0;
             float: left;
@@ -365,16 +426,18 @@
             p {
                 box-sizing: border-box;
                 float: left;
-                width: 50%;
+                width: 100%;
             }
             select {
                 float: left;
-                width: 20%;
+                box-sizing: border-box;
+                width: 80%;
+                margin-left: 2%;
             }
         } //closing number people
         .event_distance {
             box-sizing: border-box;
-            width: 33.33%;
+            width: 100%;
             margin: 0 auto;
             overflow: hidden;
             padding-bottom: 1em;
@@ -384,13 +447,15 @@
                 text-align: left;
                 font-weight: bold;
                 color: $font_color;
-                font-size: $filter_font;
+                
                 float: left;
-                width: 50%;
+                width: 100%;
             }
             .distance {
-                width: 40%;
+                width: 90%;
                 float: left;
+                width: 80%;
+                margin-left: 2%;
             }
         } //closing event distance
     } // closing search option 1
@@ -398,14 +463,14 @@
     .search_option_2 {
         text-align: left;
         box-sizing: border-box;
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-        clear: both;
+        width: 49%;
+        float: left;
+        clear: none;
         overflow: hidden;
+        font-family: $body_font;
         .event_date {
            box-sizing: border-box;
-            width: 33.33%;
+            width: 100%;
             margin: 0 auto;
             overflow: hidden;
             padding-bottom: 1em;
@@ -415,9 +480,13 @@
                 text-align: left;
                 font-weight: bold;
                 color: $font_color;
-                font-size: $filter_font;
+               
                 
-                width: 40%;
+                width: 100%;
+            }
+            input {
+                width: 100%;
+                box-sizing: border-box;
             }
             select {
                 width: 60%;
@@ -427,7 +496,7 @@
         .search_btn {
             box-sizing:border-box;
             float: left;
-            width: 30.33%;
+            width: 100%;
             display: inline-block;
             color: $font_color;
             font-family: $body_font;
@@ -457,13 +526,13 @@
         margin-top:2em;
         .recomended_events {
             
-            width: 48%;
+  
             box-sizing: border-box;
             overflow: hidden;
             padding: 1em;
             color: $font_color;
             float: left;
-            border:1px solid $font_color;
+            border:1px solid $background_color;
             border-radius:5px;
             margin-left:1%;
             margin-right:1%;
@@ -472,7 +541,7 @@
 
             .rec_img {
             float: left;
-            width: 50%;
+            width: 25%;
             img {
                 width: 100%;
                 box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
@@ -481,25 +550,11 @@
             .rec_cont {
                 padding-left: 1em;
                 float:left;
-                width: 40%;
+             
                 box-sizing: border-box;
 
                     
-                    p {
-                        font-family: $body_font;
-                        font-size: $body_size;
-                    }
-                     p:first-of-type {
-                        font-size: $subheader_size;
-                        font-weight: bold;
-                        line-height: 1.5em;
-                    }
                    
-                    a {
-                        font-family: $body_font;
-                        font-size: $body_size;
-                        color: $button_color;
-                    }
             } //closing rec_cont
 
         } //closing recomended_events//
@@ -517,7 +572,7 @@
                 margin: 2%;
             }
             .upcoming_events {
-                margin: 2%;
+             
                 clear: both;
                 overflow: hidden;
                 box-sizing:border-box;

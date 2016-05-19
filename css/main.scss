@@ -5,7 +5,7 @@
 
 //---------------------------VARIABLES-------------------------//
 //------FONTS--------------//
-$header_font: "abril-titling";
+$header_font: "abril-titling", sans-serif;
 $body_font:"petala-pro", helvetica;
 $header_size:30px;
 $subheader_size:16px;
@@ -24,6 +24,7 @@ $button_color:#3c5077;
 $button_color_alt:#D26B4E;
 $button_alt_hover:#DA5A3D;
 $event_color:#D5D6DC;
+$outline_color:#ccc;
 
 
 $tot-width: 100%;

@@ -43,3 +43,17 @@ $('.toggle').click(function(){
   $('.content').slideToggle(900);
 });
 
+$('.boot').click(function(){
+  $('.boot .background').css('fill', '#6B9D6D');
+  $('.boot .stroke').css('fill', '#FFFFFF');
+  $('.tent .background').css('fill', '#FFFFFF');
+  $('.tent .stroke').css('fill', '#6B9D6D');
+});
+
+
+$('.tent').click(function(){
+  $('.tent .background').css('fill', '#6B9D6D');
+  $('.tent .stroke').css('fill', '#FFFFFF');
+  $('.boot .background').css('fill', '#FFFFFF');
+  $('.boot .stroke').css('fill', '#6B9D6D');
+});

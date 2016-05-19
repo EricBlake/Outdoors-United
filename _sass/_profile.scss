@@ -122,7 +122,7 @@ p {
 			clear: both;
 			background-color:$background_color;
 			overflow: hidden;
-			border:1px solid $font_color;
+			border:1px solid $outline_color;
 			margin:2%;
 			border-radius:5px;
 			padding-bottom:1em;
@@ -207,7 +207,7 @@ p {
 		.prof_items{
 			box-sizing:border-box;
 			text-align: center;
-			border:1px solid $font_color;
+			border:1px solid $outline_color;
 			margin:2%;
 			border-radius:5px;
 

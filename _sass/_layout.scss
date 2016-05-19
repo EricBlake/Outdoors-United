@@ -12,6 +12,16 @@
             text-decoration: none;
             display: inline-block;
             font-weight: 800;
+            p{
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            img{
+                width: 40px;
+                display: inline-block;
+                vertical-align: middle;
+            }
         }
         .site-nav {
             float: right;
@@ -30,8 +40,8 @@
                         vertical-align: middle;
                         color: $background_color;
                         img {
-                            height: 1.5em;
-                            width: 1.5em;
+                            
+                            width: 32px;
                             display: inline-block;
                         }
                         p {
@@ -52,8 +62,8 @@
                     display: inline-block;
                     vertical-align: middle;
                     img{
-                        height: 2em;
-                        width: 2em;
+                        
+                        width: 25px;
                     }
                     .fa:hover {
                         cursor: pointer;
@@ -72,13 +82,13 @@ ul.content {
     margin-top:0;
     text-align: center;
     background-color:$background_color_alt; 
+    padding: 0;
     li {
-        display: inline-block;
-        width: 50%;
+        
         box-sizing: border-box;
         overflow: hidden;
         margin: 0 auto;
-        border-bottom:1px solid $font_color;
+        border-bottom:1px solid $outline_color;
 
         a {
             text-decoration: none;
