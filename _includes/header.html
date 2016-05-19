@@ -1,19 +1,21 @@
 <header class="site_header">
 
     <div class="header_wrapper">
-        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+        <a class="site-title" href="{{ site.baseurl }}/"><img src="images/sitelogo2.png" >
+<p>{{ site.title }}</p></a>
         <nav class="site-nav">
 
             <div class="nav_menu">
                 <div class="nav_profile">
 
-                    <a href="http://ericblake.github.io/Outdoors-United/profile.html">Hi, A.J.</a>
+                    <a href="{{ site.baseurl }}/profile.html">Hi, A.J.</a>
                     <a><img src="images/profilepic2.png"></a>
 
                  </div><!--nav_profile-->
                    
                    <div class="toggle">
-                         <img src="images/arrow3.png">
+                         <img src="images/menuicon2.png">
                     </div>
             </div><!--closing nav_menu-->
             
@@ -26,7 +28,7 @@
 
 </header>
                     <ul class="content">
-                        <li><a href="http://ericblake.github.io/Outdoors-United/profile.html">Profile</a></li>
-                        <li><a href="http://ericblake.github.io/Outdoors-United/dashboard.html">News</a></li>
-                        <li><a href="http://ericblake.github.io/Outdoors-United/events.html">Events</a></li>
+                        <li><a href="{{ site.baseurl }}/profile.html">Profile</a></li>
+                        <li><a href="{{ site.baseurl }}/dashboard.html">News</a></li>
+                        <li><a href="{{ site.baseurl }}/events.html">Events</a></li>
                     </ul>

@@ -31,14 +31,17 @@
 			
 			background-color:#fff;
 			box-sizing:border-box;
+			overflow: hidden;
 			
 
 			h1{
-				margin:2%;
+
+				margin:0 2%;
 				font-family: $body_font;
 				font-size: $header_size;
 				color: $font_color;
-				margin-top: 0;
+				padding-top: 1em;
+				padding-bottom:1em;
 				
 			}
 

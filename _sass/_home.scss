@@ -235,39 +235,18 @@
 				text-align: center;
 				color: $font_color;
 			}
-			.logo:first-of-type{
-				display: inline-block;
-				width: 20%;
-				
-				margin:0 auto;
-				
-				img{
-					width: 100%;
-
-				}
-			}
-			.logo:nth-of-type(2){
-				display: inline-block;
-				width: 20%;
-				
-				margin:0 auto;
+		
 			
-				img{
-					width: 100%;
-
-				}
-			}
 
 			p{
 				font-size: $subheader_size;
 				font-family: $body_font;
 				line-height: 1.75em;
 				box-sizing:border-box;
-				display: inline-block;
+		
 				margin: 0 auto;
 				color: $font_color;
-				
-				width: 58%;
+				width: 50%;
 			
 
 			}
