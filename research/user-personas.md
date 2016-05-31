@@ -1,5 +1,5 @@
 # Outdoors-United
-<h1>Research</h1>
+
 
 <h2>User Personas</h2>
 
